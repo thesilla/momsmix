@@ -80,10 +80,10 @@ sudo apt-get install ffmpeg
 
 ### 5. Configure `ffmpeg`
 
-Now, we need to tell the script where to find `ffmpeg`. Open up `main.py` and find this section:
+Now, we need to tell the script where to find `ffmpeg`. Open up `main.py` and find this section (or wherever it was downloaded/stored to):
 
 ```python
-'ffmpeg_location': 'C:/Users/maxeg/Downloads/ffmpeg-7.1.1-full_build/ffmpeg-7.1.1-full_build/bin'
+'ffmpeg_location': 'C:.../Downloads/ffmpeg-7.1.1-full_build/ffmpeg-7.1.1-full_build/bin'
 ```
 
 Replace the path with the path to your `ffmpeg` bin directory.
