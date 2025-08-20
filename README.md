@@ -1,8 +1,8 @@
-# 🎶 YouTube Audio Extractor 🎶
+# 🎶 YouTube Audio & Video Downloader 🎶
 
 ## 🚀 Blast Off!
 
-Ever find a song on YouTube that you just *have* to have on your MP3 player? Well, you're in luck! This nifty little Python script will snatch the audio from any YouTube video and save it as a glorious MP3 file. 🎧
+Ever find a video or song on YouTube that you just *have* to have? Well, you're in luck! This nifty little Python script will snatch the audio or video from any YouTube link and save it for your offline enjoyment. 🎧🎬
 
 ## 🛠️ For the Developers (aka The Mad Scientists)
 
@@ -106,10 +106,24 @@ python main.py "YOUR_YOUTUBE_URL_HERE"
 
 ### Optional: Specify an Output Directory
 
-By default, your MP3s will be saved in a directory called `output`. If you want to save them somewhere else, use the `-o` or `--output` flag.
+By default, your files will be saved in a directory called `output`. If you want to save them somewhere else, use the `-o` or `--output` flag.
 
 ```bash
 python main.py "YOUR_YOUTUBE_URL_HERE" -o "C:\Users\YourUser\Music"
 ```
 
-And that's it! Enjoy your new MP3s! 🎉
+### Optional: Download the Video
+
+Want the video instead of just the audio? Use the `-v` or `--video` flag.
+
+```bash
+python main.py "YOUR_YOUTUBE_URL_HERE" -v
+```
+
+You can also combine flags:
+
+```bash
+python main.py "YOUR_YOUTUBE_URL_HERE" -v -o "C:\Users\YourUser\Videos"
+```
+
+And that's it! Enjoy your new files! 🎉
