@@ -115,6 +115,16 @@ python main.py
 
 The script will read your Firestore `songs` collection, process any songs that have a `youtubelink` but no `audiofile`, and upload the extracted audio to Firebase Storage, linking it back to the song document.
 
+### Watching for New Songs
+
+To run the script in the background and automatically process new songs as they are added to your Firestore collection, use the `--watch` flag:
+
+```bash
+python main.py --watch
+```
+
+The script will continue to run, monitoring the `songs` collection for any new documents that have a `youtubelink` and no `audiofile`.
+
 ### Processing a Single URL
 
 You can also process a single YouTube URL directly from the command line.
